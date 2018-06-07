@@ -1,0 +1,13 @@
+prefix=D:/All/Embedded/SysGCC/Raspberry/arm-linux-gnueabihf/sysroot/usr/local/qt5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=/usr/local/qt5/include
+
+
+Name: Qt5 Bootstrap
+Description: Qt Bootstrap module
+Version: 5.5.1
+Libs: -L${libdir} -lQt5Bootstrapd 
+Libs.private: -luser32 -lole32 -ladvapi32 -lshell32   
+Cflags: -I${includedir}/QtBootstrap -I${includedir}
+

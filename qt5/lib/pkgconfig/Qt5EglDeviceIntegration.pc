@@ -1,0 +1,14 @@
+prefix=D:/All/Embedded/SysGCC/Raspberry/arm-linux-gnueabihf/sysroot/usr/local/qt5
+exec_prefix=${prefix}
+libdir=/usr/local/qt5/lib
+includedir=/usr/local/qt5/include
+
+
+Name: Qt5 EglDeviceIntegration
+Description: Qt EglDeviceIntegration module
+Version: 5.5.1
+Libs: -L${libdir} -lQt5EglDeviceIntegration 
+Libs.private: -LD:/All/Embedded/SysGCC/Raspberry/arm-linux-gnueabihf/sysroot/opt/vc/lib -ldl -L/usr/local/qt5/lib -lQt5PlatformSupport -lQt5DBus -lqtfreetype -lz -lEGL -lGLESv2 -lQt5Gui -lQt5Core -lpthread -lEGL -lGLESv2  
+Cflags: -I${includedir}/QtEglDeviceIntegration -I${includedir}
+Requires: Qt5Core Qt5Gui
+

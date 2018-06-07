@@ -1,0 +1,14 @@
+prefix=D:/All/Embedded/SysGCC/Raspberry/arm-linux-gnueabihf/sysroot/usr/local/qt5
+exec_prefix=${prefix}
+libdir=/usr/local/qt5/lib
+includedir=/usr/local/qt5/include
+
+
+Name: Qt5 Sensors
+Description: Qt Sensors module
+Version: 5.5.1
+Libs: -L${libdir} -lQt5Sensors 
+Libs.private: -L/usr/local/qt5/lib -lQt5Core -lpthread   
+Cflags: -I${includedir}/QtSensors -I${includedir}
+Requires: Qt5Core
+
